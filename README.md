@@ -47,8 +47,6 @@ Our goal is to make the process of bringing ideas to life **simple, engaging, an
 - **Version Control:** Git & GitHub  
 - **Other Tools:** Vite, Tailwind CSS, Framer Motion, React Icons  
 
-*(Update this section according to your actual tech stack.)*
-
 ---
 
 ## Getting Started
@@ -58,7 +56,4 @@ Our goal is to make the process of bringing ideas to life **simple, engaging, an
 - Git
 - Package manager: npm or yarn
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/mentexa.git
+
