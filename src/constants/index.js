@@ -24,6 +24,16 @@ import {
   tripguide,
   threejs,
 } from "../assets";
+import Project_1 from "../assets/Project_1.png";
+import Project_2 from "../assets/Project_2.png";
+import Project_3 from "../assets/Project_3.png";
+import Project_4 from "../assets/Project_4.png";
+import Project_5 from "../assets/Project_5.png";
+import Project_6 from "../assets/Project_6.png";
+import Project_7 from "../assets/Project_7.png";
+import Project_8 from "../assets/Project_8.png";
+import Project_9 from "../assets/Project_9.png";
+//import Project_10 from "../assets/Project_10.png";
 
 export const navLinks = [
   {
@@ -42,15 +52,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web Development & UI/UX Design",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Flutter Development & Machine Learning ",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Idea Guidance & Internship",
     icon: backend,
   },
   {
@@ -113,58 +123,57 @@ const technologies = [
     icon: docker,
   },
 ];
-
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Week 1 – Spark & Strategy",
+    company_name: "Kickoff Phase",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Week 1",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Listening to your idea and vision.",
+      "Research and locking key features.",
+      "Quick sketches & wireframes for flow.",
+      "Clear roadmap with milestones.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Week 2 – Design in Motion",
+    company_name: "Creative Sprint",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Week 2",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Turning ideas into clean UI/UX.",
+      "Interactive prototypes for early feel.",
+      "Consistent look across platforms.",
+      "Tweaks based on your feedback.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Week 3 – Build & Develop",
+    company_name: "Creation Phase",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Week 3",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Frontend magic with React/Flutter.",
+      "Backend, APIs & databases in action.",
+      "Features built & tested step by step.",
+      "Progress updates keep you involved.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Week 4 – Test, Launch & Learn",
+    company_name: "Delivery & Growth",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Week 4",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Testing on devices & browsers.",
+      "Bug fixes & performance polish.",
+      "Final walkthrough before launch.",
+      "Go live 🎉 + post-launch support & mentoring.",
     ],
   },
 ];
@@ -172,93 +181,150 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "Before joining Mentexa, I was struggling to shape my startup idea. The mentors here not only guided me but also connected me with the right people. Now my project is on track, and I feel unstoppable!",
+    name: "Aarav Sharma",
+    designation: "Student Entrepreneur",
+    company: "IIT Delhi",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Mentexa is not just a platform; it’s a community. The way they connect students and startups is something I haven’t seen anywhere else. They really care about turning ideas into real impact.",
+    name: "Meera Nair",
+    designation: "Innovation Lead",
+    company: "Startup Kerala Mission",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+  {
+    testimonial:
+      "I had skills but lacked direction. Through Mentexa, I got guidance, feedback, and opportunities that completely changed my journey. Today, I’m confident about building my dream company.",
+    name: "Reshma Reddy",
+    designation: "Founder",
+    company: "TechSphere Labs",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
 ];
 
+
 const projects = [
   {
-    name: "Car Rent",
+    name: "Finance Management System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-stack web app to manage personal finances by tracking income, expenses, and visualizing budgets.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Express", color: "pink-text-gradient" },
+      { name: "MongoDB", color: "orange-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: Project_1,
+    source_code_link: "https://finance-ten-ashen.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Nexrise-AI Career Coach",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A platform connecting teachers and students with features for doubt resolution and community building.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Firebase", color: "green-text-gradient" },
+      { name: "Node.js", color: "pink-text-gradient" },
+      { name: "Neon", color: "orange-text-gradient" },
+      { name: "Clerk", color: "purple-text-gradient" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: Project_2,
+    source_code_link: "https://nex-rise-21u3.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Neural Network Project",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Implemented a simple neural network to understand deep learning fundamentals and model training.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "RNN", color: "blue-text-gradient" },
+      { name: "CNN", color: "green-text-gradient" },
+      { name: "Tensorflow", color: "pink-text-gradient" },
+      { name: "Keras", color: "orange-text-gradient" },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: Project_3,
+    source_code_link: "https://github.com/vidhya2324/Neutral_network.git",
+  },
+  {
+    name: "Streamlit Diabetes Prediction",
+    description:
+      "Interactive data visualization dashboard built using Streamlit for quick data exploration, focusing on diabetes.",
+    tags: [
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Streamlit", color: "green-text-gradient" },
+      { name: "Pandas", color: "pink-text-gradient" },
+      { name: "Model Training", color: "orange-text-gradient" },
+    ],
+    image: Project_4,
+    source_code_link:
+      "https://github.com/vidhya2324/Deploy_Diabetes_Streamlit.git",
+  },
+  {
+    name: "Chatbot Development",
+    description:
+      "Developed a conversational chatbot integrating NLP techniques for customer support automation.",
+    tags: [
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "NLTK", color: "green-text-gradient" },
+      { name: "TensorFlow", color: "pink-text-gradient" },
+    ],
+    image: Project_5,
+    source_code_link: "https://github.com/vidhya2324/Chatbot.git",
+  },
+  {
+    name: "Machine Learning Project",
+    description:
+      "Built with LSTM to predict stock prices based on historical financial data and market trends.",
+    tags: [
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "LSTM", color: "green-text-gradient" },
+      { name: "SVM", color: "pink-text-gradient" },
+      { name: "Finance", color: "orange-text-gradient" },
+    ],
+    image: Project_6,
+    source_code_link:
+      "https://github.com/vidhya2324/Machine_learning_starting_project.git",
+  },
+  {
+    name: "Chatbot using Gemini API",
+    description:
+      "Conversational chatbot powered by Gemini API for natural language understanding and interactive dialogue.",
+    tags: [
+      { name: "JavaScript", color: "blue-text-gradient" },
+      { name: "Gemini API", color: "green-text-gradient" },
+      { name: "Chatbot", color: "pink-text-gradient" },
+      { name: "NLP", color: "orange-text-gradient" },
+    ],
+    image: Project_7,
+    source_code_link: "https://github.com/vidhya2324/ChatBot_gemini_API.git",
+  },
+  {
+    name: "Chatbot with Hugging Face",
+    description:
+      "Developed a chatbot using Hugging Face transformers to enable contextual conversations with users.",
+    tags: [
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Hugging Face", color: "green-text-gradient" },
+      { name: "Transformers", color: "pink-text-gradient" },
+      { name: "NLP", color: "orange-text-gradient" },
+    ],
+    image: Project_8,
+    source_code_link: "https://github.com/vidhya2324/ChatBot_Hugging_Face.git",
+  },
+  {
+    name: "AI-Powered Blood Test Analyzer",
+    description:
+      "A Flutter-based mobile app that interprets blood test results using OpenAI's API, offering health insights.",
+    tags: [
+      { name: "Flutter", color: "blue-text-gradient" },
+      { name: "Dart", color: "green-text-gradient" },
+      { name: "OpenAI API", color: "pink-text-gradient" },
+      { name: "Healthcare", color: "orange-text-gradient" },
+    ],
+    image: Project_9,
+    source_code_link: "https://github.com/vidhya2324/Flutter-OpenAI-main",
   },
 ];
 
